@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { RootState, AppDispatch } from '../store/store';
-import { fetchMovies, setCurrentPage, setItemsPerPage, setSelectedCategories, deleteMovie } from '../store/Movies/MoviesSlice';
-import MovieCard from './MovieCard';
-import CategoryFilter from './CategoryFilter';
-import Icon from './common/Icon';
+import { RootState, AppDispatch } from '../../store/store';
+import { fetchMovies, setCurrentPage, setItemsPerPage, setSelectedCategories, deleteMovie } from '../../store/Movies/MoviesSlice';
+import MovieCard from '../MovieCard';
+import CategoryFilter from '../CategoryFilter';
+import Icon from '../common/Icon';
 import './MovieList.css';
 
 const MovieList: React.FC = () => {

@@ -1,6 +1,6 @@
-/* Apply a global style for the body to have a black background and white text */
+
 body {
-  background: rgb(0, 0, 0); /* Semi-transparent background */
+  background: rgb(0, 0, 0);
 
   color: white;
   margin: 0;
@@ -61,8 +61,8 @@ text{
 }
 
 .pagination-controls button {
-  background-color: #555; /* Dark gray background for buttons */
-  color: white; /* White text color for buttons */
+  background-color: #555; 
+  color: white;
   border: none;
   padding: 8px 16px;
   margin: 0 4px;
@@ -71,7 +71,7 @@ text{
 }
 
 .pagination-controls button:disabled {
-  background-color: #777; /* Lighter gray for disabled buttons */
+  background-color: #777;
   cursor: not-allowed;
 }
 
@@ -179,15 +179,14 @@ button:hover {
   align-items: left;
   justify-content: center;
   padding: 20px;
-  background: rgba(0, 0, 0, 0.8); /* Dark semi-transparent background */
+  background: rgba(0, 0, 0, 0.8);
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   width: 100%;
-  min-height: 100vh; /* Ensures it covers the full height of the viewport */
-  margin: 0; /* Removes margin to avoid gaps */
+  min-height: 100vh;
   color: white;
   background: url('./assets/categorysvg/hodbg.jpg') no-repeat center center fixed;
-  background-size: cover; /* Ensures the background image covers the entire container */
+  background-size: cover; 
   border-bottom : 1px solid white
 }
 
@@ -205,7 +204,7 @@ button:hover {
 
 
 .footer {
-  background-color: rgba(0, 0, 0, 0.8); /* Dark semi-transparent background */
+  background-color: rgba(0, 0, 0, 0.8); 
   color: white;
   padding: 20px;
   text-align: center;
@@ -235,7 +234,7 @@ button:hover {
 }
 .image-container{
   width: 50%;
-  max-width: 100%; /* Adjust this value as needed */
+  max-width: 100%;
   margin: 20px 0;
   display: flex;
   justify-content: left;

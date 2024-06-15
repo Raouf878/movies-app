@@ -16,7 +16,7 @@ const CategoryFilter: React.FC = () => {
       {selectedCategories.map(category => (
         <div key={category} className="category-filter-card selected">
           {category}
-          <Icon name={`${category}`} width={30} height={30} />
+          <Icon name={`${category}`} width={30}  height={30} />
         </div>
       ))}
     </div>

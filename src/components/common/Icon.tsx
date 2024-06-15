@@ -16,18 +16,19 @@ export interface IconProps {
   name:string;
   style?: CSSProperties;
   width?: string | number;
+  styleName?: 'flip' | 'rotateDown' | 'rotateUp';
   height?: string | number;
 }
 
-// Define the Icon component
 const Icon = ({ name, style, width, height }: IconProps) => {
   const commonProps = {
-    style: { ...styles.icon, ...style },
+    style: {...style },
+    
     width,
     height,
   };
 
-  // Create a mapping for the icons
+
   const icons: Record<string, React.FC<React.SVGProps<SVGSVGElement>>> = {
     Comedy:Comedy,
     Thriller:Thriller,
@@ -39,17 +40,12 @@ const Icon = ({ name, style, width, height }: IconProps) => {
   const IconComponent = icons[name];
 
   if (!IconComponent) {
-    return null; // Handle the case where the icon name does not exist
+    return null;
   }
 
   return <IconComponent {...commonProps} />;
 };
 
-const styles = {
-  icon: {},
-  flip: { transform: 'rotate(180deg)' },
-  rotateDown: { transform: 'rotate(-90deg)' },
-  rotateUp: { transform: 'rotate(90deg)' },
-};
+
 
 export default Icon;
